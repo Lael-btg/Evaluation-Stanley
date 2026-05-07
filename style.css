@@ -1,0 +1,168 @@
+/* n'avoir aucune marge et aucun padding par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Configuration des deifférentes polices de l'évaluation et personnalisation du header
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(32, 61, 133, 0.3);
+}
+/* Application des contraintes de couleurs et de polices comme demandé à l'évaluation ajout d'un font style pour expérimenter le rendu*/
+body{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-family: Open, sans-serif;
+    text-decoration: #333333;
+}
+h1 {
+    color: #333333;
+    font-style: oblique;
+    font-family: Monserat, sans-serif;
+}
+h2 {
+    color: #333333;
+    font-style: italic;
+    font-family: Open, sans-serif;
+}
+p {
+    color: #333333;
+    font-family: Open, sans-serif;
+}
+li {
+    color: #333333;
+    font-family: Open, sans-serif;
+    list-style-type: square;
+}
+/* Hover barre de nav pour que ce soit bleu quand on passe dessus */
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0e0e0;
+}
+/* Homogénisation de la section pour que ça respire */
+section{
+margin: 2rem;
+text-align: center;
+justify-content: center;
+flex-direction: column;}
+/* Responsivité pour les plus petits écrans ( les valeurs en : px corresponent aux valeurs de base des mobiles et tablettes retrouvé sur internet) */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 4rem 1.5rem;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .themes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        padding: 0.7rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .themes {
+        padding: 2rem 1rem;
+    }
+
+    .themes h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .themes-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .theme-card img {
+        height: 150px;
+    }
+
+    .about {
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+}
