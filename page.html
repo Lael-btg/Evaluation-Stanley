@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    */lien du CSS dans la structure de base sinon inutile */
+    <!-- lien du CSS dans la structure de base sinon inutile -->
     <link rel="stylesheet" href="style.css">
-</head>
-/* J'ai tout fait dans le body pour respecter la structure */
-<body>
+    </head>
+<!-- J'ai tout fait dans le body pour respecter la structure -->
     <header> 
         
         <section class="Nav">
-
-<nav>
             <div class="image">
                 <img src="Asset/logoipsum-352.png" alt="Logo de Digital Student">
             </div>
-            
-                
-                    <a href="#introduction  ">Introduction</a>
-                    <a href="#pourquoi-html">HTML</a>
-                    <a href="#css">CSS</a>
-                    <a href="#help-center">Tips et bonnes pratiques</a>
-                    <a href="#contact-form">Contact</a>
-        </nav>
-    </section class="Nav">
-        
+            <nav>
+                <a href="#introduction  ">Introduction</a>
+                <a href="#pourquoi-html">HTML</a>
+                <a href="#css">CSS</a>
+                <a href="#help-center">Tips et bonnes pratiques</a>
+                <a href="#contact-form">Contact</a>
+            </nav>
+        </section class="Nav">
         
     </header>
+    <body>
+    */ j'ai mis pleins "sections" pour définir et organiser les éléments composant la posant la page pour ensuite mettre une classe pour le lien cliquable */
     <section class=" Introduction" id="introduction">
         <h1>Introduction</h1>
             <p>Bienvenue dans cette introduction au HTML et au CSS !
@@ -36,7 +33,8 @@
             pour plus de balises vous pouvez directement aller sur le site <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML/Element">MDN Web Docs</a> qui propose une documentation complète sur les éléments HTML et leurs utilisations.
             </p>
     </section>
-        <section class="Pourquoi le HTML" id="pourquoi-html">
+
+    <section class="Pourquoi le HTML" id="pourquoi-html">
             <h2>Pourquoi HTML</h2>
             <p>Le HTML (HyperText Markup Language) est le langage de balisage utilisé pour créer la structure de base d'une page web. Il définit les éléments tels que les titres, paragraphes, liens et images.
             Exemple de code HTML :
@@ -75,6 +73,7 @@
             le CSS ne peut pas s'utiliser seul, il doit être associé au HTML pour donner vie à la structure de base d'une page web. En combinant le HTML pour la structure et le CSS pour la présentation, vous pouvez créer des sites web attrayants et fonctionnels.
             </p>
         </section>
+
         <section class="Use CSS" id="use-css">
             <h2>Comment utiliser le CSS</h2>
             <p>Il existe plusieurs façons d'utiliser le CSS pour styliser une page web. Vous pouvez inclure des styles CSS directement dans les éléments HTML à l'aide de l'attribut "style", ou vous pouvez créer un fichier CSS externe et le lier à votre page HTML à l'aide de la balise &lt;link&gt; dans la section &lt;head&gt; de votre document.
@@ -91,15 +90,17 @@
             Dans cet exemple, nous avons créé un fichier CSS externe nommé "styles.css" et nous l'avons lié à notre page HTML. Ensuite, nous pouvons définir nos règles de style dans ce fichier CSS pour personnaliser les éléments de notre page web.
             </p>
         </section>
+
         <section class="Help Center" id="help-center">
             <h2>tips et bonne pratique</h2>
             Pour une meilleur expérience utilisateur, il est important de suivre certaines bonnes pratiques lors de la création de pages web avec HTML et CSS. Voici quelques conseils utiles :
-            <ul>
-                <li>Utilisez des balises sémantiques pour structurer votre contenu de manière logique et compréhensible.</li>
-                <li>Organisez votre code CSS de manière claire et maintenable en utilisant des classes et des ID pour cibler les éléments spécifiques.</li>
-                <li> Evitez au maximum les &lt;div&gt; sans sens sémantique.</li>
-            </ul>
+            <article>
+                <p>Utilisez des balises sémantiques pour structurer votre contenu de manière logique et compréhensible.</p>
+                <p>Organisez votre code CSS de manière claire et maintenable en utilisant des classes et des ID pour cibler les éléments spécifiques.</p>
+                <p> Evitez au maximum les &lt;div&gt; sans sens sémantique.</p>
+            </article>
         </section>
+
         <section class="conclusion">
             <h2>Et c'est codé ! </h2>
             <p>Nous espérons que ce guide vous a été utile pour comprendre les bases du HTML et du CSS.
@@ -107,9 +108,10 @@
             Cordialement , Digital Student !
             </p>
         </section>
+
         <section class="Formulaire de contact" id="contact-form">
             <h2>Nous contacter</h2>
-            <form>
+            <html>
                 <p>Pour toutes questions ou commentaires, veuillez remplir le formulaire ci-dessous :</p>
                 <label for="name">Nom :</label>
                 <input type="text" id="name" name="name" required>
@@ -137,3 +139,9 @@
                 <button type="submit">S'abonner</button>
                 </div>
                 </form>
+        </section>
+</html>
+*/ decouverte du copiright ce serrait dommage de se faire voler le travail non ? */ 
+<footer>
+    <p>&copy; 2023 Mon Site Web. Tous droits réservés.</p>
+</footer>
