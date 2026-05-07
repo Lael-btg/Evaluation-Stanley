@@ -62,7 +62,7 @@ margin: 2rem;
 text-align: center;
 justify-content: center;
 flex-direction: column;}
-/* Responsivité pour les plus petits écrans ( les valeurs en : px corresponent aux valeurs de base des mobiles et tablettes retrouvé sur internet) */
+/* Responsivité pour les plus petits écrans ( les valeurs en : px corresponent aux valeurs de base des mobiles et tablettes retrouvé sur internet) plus l'écrand diminue et se refermme plus la page va se regrouper en colonne */
 
 @media (max-width: 768px) {
     header {
@@ -166,3 +166,15 @@ flex-direction: column;}
         font-size: 0.9rem;
     }
 }
+/* J'avais oublié de rendre l'expérience utilisateur pour agréable même en lisant du code alors je l'ai révélé dans une bordure en essayant plusieurs espassements et celui que j'ai le plus apprécié est celui-ci */
+
+pre {white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Open, sans-serif;
+    color: #333333;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow-x: auto;}
